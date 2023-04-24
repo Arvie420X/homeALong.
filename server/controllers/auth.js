@@ -71,6 +71,7 @@ export const preRegister = async (req, res) => {
         const encodedToken = Base64.encode(token);
         // console.log('Unsafe encoded token:',encodedToken);
         const urlSafeEncodedToken = urlSafe.encode(encodedToken);
+        console.log(urlSafeEncodedToken);
         // console.log('Safe encoded token', urlSafeEncodedToken);
 
         // let decodedToken = urlSafe.decode(urlSafeEncodedToken).toString();
