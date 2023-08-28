@@ -1,5 +1,5 @@
 import React from 'react'
-import { imageFileResizer } from 'react-image-file-resizer';
+import Resizer from "react-image-file-resizer";
 import axios from 'axios';
 import { Avatar} from 'antd';
 
@@ -15,7 +15,7 @@ const ImageUpload = ({ad, setAd}) => {
 
                 files.map(file => {
                     new Promise(() => {
-                        imageFileResizer(
+                        Resizer.imageFileResizer(
                             file,
                             300,
                             300,
